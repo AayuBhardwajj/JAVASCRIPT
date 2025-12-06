@@ -61,3 +61,4 @@ object1.name= "Shyam"; // Now, i modified a value, name of object 1. As it was s
 
 console.log(object);
 console.log(object1);
+
