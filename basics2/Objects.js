@@ -1,5 +1,5 @@
 // Objects are declared using 2 ways: literal and Constructor. 
-// When object is made by a literal, singleton object is created and global access is provided through a closure.  (Apni tarah ka ek hi object hai.)
+// When object is made by a literal, singleton object instance is created and global access is provided through a closure.  (Apni tarah ka ek hi object hai.)
 // When object is made by a constructor, its multiple instances could be created. To implement singleton behaviour with a consturctor, extra logic is needed.  
  
 
