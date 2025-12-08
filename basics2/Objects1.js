@@ -11,14 +11,14 @@ const user={                      // understanding the concept of nested objects
  
 // Merging multiple objects into single 
 
-// const obj1={1: "Hey", 2: "Hello "};
-// const obj2={3: "Kya haal hai", 4:"Kya hi kr skte hai"};
+const obj1={1: "Hey", 2: "Hello "};
+const obj2={3: "Kya haal hai", 4:"Kya hi kr skte hai"};
 
-// let finalObj=Object.assign({},obj1,obj2);   // Object.assign(target, source, source, source.. ), first value is the target, after it are all source.
-// console.log(finalObj);
+let finalObj=Object.assign({},obj1,obj2);   // Object.assign(target, source, source, source.. ), first value is the target, after it are all source.
+console.log(finalObj);
 
-// let finalObj1={...obj1, ...obj2};   // Spreading method
-// console.log(finalObj1);  
+let finalObj1={...obj1, ...obj2};   // Spreading method
+console.log(finalObj1);  
 
 console.log(user)
 console.log();
