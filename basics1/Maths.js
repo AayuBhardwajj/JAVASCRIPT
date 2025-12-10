@@ -1,4 +1,4 @@
-// console.log(Math.abs(-9));
+// console.log(Math.abs(-9)); 
 // let a=Math.round(4.7);
 // console.log(`The rounded of value of 4.7 is ${a} `);
 // let b=Math.ceil(4.3);

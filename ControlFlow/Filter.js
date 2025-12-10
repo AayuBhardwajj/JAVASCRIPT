@@ -41,5 +41,8 @@
 
 let nums=[1,2,3,4,5,6,7,8,9,10];
 let ans= nums.map((x)=>x*10).map((x)=> x+1).filter((x)=> x>80);
-console.log(ans);
+console.log(ans);  
+
+// Basic difference between filter and map, filter accepts value on the basis of true or false. If condition is true, filter allows the further execution
+// in case of map, map focuses more on modifying the data.
 
