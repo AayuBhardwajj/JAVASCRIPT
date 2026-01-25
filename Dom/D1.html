@@ -25,6 +25,11 @@
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit amet.</h2>
         <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+        <ul>
+        <li class="Lit">Item </li>
+        <li class="Lit">Item </li>
+        <li class="Lit">Item </li></ul>
     </div>
 </body>
 </html>
@@ -41,5 +46,19 @@
 
 innerText -> only shows the text that is visible on webpage
 innerHTML-> gives the entire html code of what is hidden
-textContent-> gives both, visible text over the website and hidden text
-->
+textContent-> gives both, visible text over the website and hidden text-->
+
+<!--- document.QuerySelector("whatever we pass here, lets say h1").. the very first h1 tag wil be returned --->
+<!--- Id is selected by #--->
+<!--class is selected by ' . '--->
+
+
+<!--document.querySelector() gives the first query, and can be used as an array -->
+
+<!-- document.quesrySelectorAll() gives all the queries present, and can't be directly used as array
+
+ Let's say there are 2 "h1" tags.. by using querySelectorAll, i wanna access second h1, so.. it'll be like 
+ const head=document.querySelectorAll(h1);
+ head[1].style.color="red" -->
+
+ <!--To convert htmlcollection to array, we use Array.from(variable having tempclassList)-->
