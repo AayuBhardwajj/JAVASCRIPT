@@ -21,8 +21,25 @@
 </body>
 <script>
    const par= document.querySelector(".Week");
-   console.log(par);
-   console.log(par.children)
+//    console.log(par);
+//    console.log(par.children)
 
+    // for(let i=0;i<par.children.length;i++){
+    //     console.log(par.children[i]);
+    // }
+
+    par.children[1].style.color="orange";
+    // console.log(par.firstElementChild);  //Concept of first element & last element access
+    // console.log(par.lastElementChild);
+    
+    const fc=document.querySelector(".day");
+    // console.log(fc);    
+
+    // console.log(fc.parentElement); // Concept of accesssing parent element from child element
+    console.log("NODES: ",par.childNodes);
+    
+    
+    
 </script>
 </html>
+<!--.children returns a HTML collection. -->
