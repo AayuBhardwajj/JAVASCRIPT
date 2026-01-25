@@ -18,7 +18,26 @@ color: white;">
        li.innerHTML=`${ln}`;          // assign the space for text to be added 
        document.querySelector(".Language").appendChild(li); // select the place where you wanna add and add there.
     }
+
+    function addLangOptim(ln){
+        const li=document.createElement("li"); // create a block
+        li.appendChild(document.createTextNode(ln)); // usi block me append krdo jo bhi likhna hai
+        document.querySelector(".Language").appendChild(li); // created block ko particular jgh select krke append 
+    }
     addLang("python");
     addLang("Java");
+    addLangOptim("C++");
+
+    // Editing an existing element
+
+    const secondLang=document.querySelector("li:nth-child(2)"); // selecting the element we wanna replace
+    const newli=document.createElement("li"); // create a new element
+    newli.textContent="Dojo"; // fill text in it
+    secondLang.replaceWith(newli); //replace using to_Be_Replaced .replacewith new_Vale
+
+    const thirdLang=document.querySelector("li:nth-child(1)");
+    const newel=document.createElement("li");
+    newel.innerText="R";
+    thirdLang.replaceWith(newel);
 </script>
 </html>
