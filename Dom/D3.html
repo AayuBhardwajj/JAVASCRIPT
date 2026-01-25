@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: black;
+color: white;">
+    <ul class="Language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // a function to create an element
+    function addLang(ln){
+       const li= document.createElement("li"); // create a block of element
+       li.innerHTML=`${ln}`;          // assign the space for text to be added 
+       document.querySelector(".Language").appendChild(li); // select the place where you wanna add and add there.
+    }
+    addLang("python");
+    addLang("Java");
+</script>
+</html>
