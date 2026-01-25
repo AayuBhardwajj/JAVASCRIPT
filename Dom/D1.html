@@ -2,15 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document Object Model</title>
+    <style>
+        .div{
+            background-color: aqua;
+        }
+        .Heading{
+            background-color:azure
+            text
+        }
+        .Information{
+            background-color: yellow;
+        }
+    </style>
 </head>
-<body style="background-color: aqua;color: blue;">
-    <div class="parent">
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
-        <div class="day">Wednesday</div>
-        <div class="day">Thursday</div>
+<body>
+    <div class="div">
+        <h1 id="title" class="Heading">Learing about DOM<span style="display: none">Test Text</span></h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+
+        <h1 class="Information"> I am learning about dom manipulation</h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
     </div>
 </body>
 </html>
+
+<!--.getElementById("id of the element")-->
+
+<!----.getElementById("id of the element".className) gives the name of class of that element ----->
+
+<!----.getElementById("id of the element").getAttribute( "attributes like class/id") gives the name of attribute-->
+
+<!--.getElementById().setAttribute("purana attribute ka name","new attribute ka name")-->
+
+<!--difference between innerText && textContent && innerHTMl
+
+innerText -> only shows the text that is visible on webpage
+innerHTML-> gives the entire html code of what is hidden
+textContent-> gives both, visible text over the website and hidden text
+->
