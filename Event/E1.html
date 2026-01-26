@@ -10,22 +10,45 @@
         <ul id="images">
             <li id="AP">Apple</li>
             <li id="MNG">Mango</li>
-            <li onclick="alert('Pineapple')">Pineapple</li>
+            <li >Pineapple</li>
         </ul>
+
+        <a id="go" href="https://www.google.com/">google </a>
     </div>
 </body>
 <script>
     const newEL=document.createElement("li");
     newEL.textContent="Kiwi";
     document.querySelector("#images").appendChild(newEL);
-
+ 
     document.getElementById("AP").onclick=function(){
-        alert("Apple was clicked")
+       // alert("Apple was clicked")
     }
 
-    document.getElementById("MNG").addEventListener("click", function(){
-        alert("Mango was clicked");
-    })
+    document.getElementById("MNG").addEventListener("click", function(e){
+        //alert("Mango was clicked");
+        // console.log(e);
+        
+    },  false)
 
+    //To study on own abou events:
+    //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget,
+    // clientX, clienty, screenX, 'screenY 1l altkey, ctrlkey, shiftkey, keyCode
+
+    // Event Propogation
+
+    document.getElementById("images").addEventListener("click",  function(){
+        console.log("Image was clicked")
+    }, false);
+
+     document.getElementById("MNG").addEventListener("click",  function(e){
+        console.log("Mango was clicked")
+       e.stopPropagation();
+    }, false);
+    
+    //Bubbling events -> when addEventListener is false, the hierarchy goes from lower to upper. first child element's event is called , then parent element's event.
+    //In capturing-> when addEventListener is true, the events are ran in higher to lower hierarchy.. firstly, event of parent element is captured and then the child element
+    // .stopPropagation  prevents the parent click event from running.
 </script>
 </html>
