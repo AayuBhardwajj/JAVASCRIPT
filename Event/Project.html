@@ -1,0 +1,34 @@
+<!--Create 2 buttons, start and stop, when start is tapped , it should start printing your name along with date.. 
+when stop is clicked, it should stop --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="text-align: center;">HELLO</h1>
+    <button id="st">start</button>
+    <button id="sto">stop</button>
+</body>
+<script>
+    let x;
+    document.querySelector("#st").addEventListener("click",()=>{
+    x=setInterval(sayN,1000);
+    });
+
+    const sayN=()=>{
+        console.log("Aayush",Date.now());
+    }
+    document.querySelector("#sto").addEventListener("click",()=>{
+        clearInterval(x);
+        x=null;
+        console.log("Printing was stopped, because you pressed the stop button");
+        
+    })
+
+    
+</script>
+</html>
