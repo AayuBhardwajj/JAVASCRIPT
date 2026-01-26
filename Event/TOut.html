@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id ="but" style="background-color: aqua;">stop</button>
+</body>
+<script>
+    const myName=function(){
+        console.log("My name is: Aayush");
+    }
+
+
+    const changeHead= function(){
+       const h= document.querySelector("h1");
+        h.innerText="YEllo";
+    }
+    const ti= setTimeout(changeHead,5000);
+    
+    document.querySelector("#but").addEventListener("click",()=>{
+        clearTimeout(ti);
+        console.log("The event was stopped");
+        
+    })
+
+</script>
+</html>
