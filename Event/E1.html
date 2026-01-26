@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+<body style="background-color: teal;color: antiquewhite;">
+    <div>
+        <ul id="images">
+            <li id="AP">Apple</li>
+            <li id="MNG">Mango</li>
+            <li onclick="alert('Pineapple')">Pineapple</li>
+        </ul>
+    </div>
+</body>
+<script>
+    const newEL=document.createElement("li");
+    newEL.textContent="Kiwi";
+    document.querySelector("#images").appendChild(newEL);
+
+    document.getElementById("AP").onclick=function(){
+        alert("Apple was clicked")
+    }
+
+    document.getElementById("MNG").addEventListener("click", function(){
+        alert("Mango was clicked");
+    })
+
+</script>
+</html>
