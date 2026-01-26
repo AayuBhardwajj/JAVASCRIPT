@@ -50,5 +50,9 @@
     //Bubbling events -> when addEventListener is false, the hierarchy goes from lower to upper. first child element's event is called , then parent element's event.
     //In capturing-> when addEventListener is true, the events are ran in higher to lower hierarchy.. firstly, event of parent element is captured and then the child element
     // .stopPropagation  prevents the parent click event from running.
+
+    document.getElementById("go").addEventListener("click", (e)=>{
+        e.preventDefault();
+    }, false)
 </script>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:chocolate">
+    <ul class="lan">
+        <li class="Hin">Hindi</li>
+        <li class="Eng">English</li>
+        <li class="Pah">Pahadi</li>
+        <li class="Pun">Punjabi</li>
+    </ul>
+</body>
+<script>
+    document.querySelector(".lan").addEventListener("click",(e)=>{
+       console.log(e.target);
+       let rem=e.target;
+       rem.remove();
+    }, false)
+</script>
+</html>
