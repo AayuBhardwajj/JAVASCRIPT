@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h">Languages</h1>
+    <ol class="list">
+        <li>Java</li>
+        <li>Javascript</li>
+    </ol>
+    <button class="str">start</button>
+    <button class="stp">stop</button>
+</body>
+<script>
+    //create 2 buttons, start and stop
+    // create a function, that'll add more elements to the list
+
+    //when a user taps on start, it should print new langauge, when stop, it stop
+    let i=1;
+    const addMore= function(){
+        const lm=document.createElement("li");
+        lm.textContent="New Language" + i++;
+        document.querySelector("ol").appendChild(lm);
+    }
+    
+   let x = null;
+    document.querySelector(".str").addEventListener("click", ()=>{
+        if(x===null){
+            console.log("You just pressed the start button. lets gooo");
+            
+       x= setInterval(addMore,3000);
+        }
+    });
+
+    document.querySelector(".stp").addEventListener("click",()=>{
+        clearInterval(x);
+        x=null;
+        console.log("You just pressed the stop button mate.");
+        
+    })
+
+    
+</script>
+</html>
