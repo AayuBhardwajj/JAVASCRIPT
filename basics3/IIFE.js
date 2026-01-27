@@ -5,11 +5,20 @@
 // Nothing special, bss apne function ko ek ( ) me wrap kr do, it'll protect the function from global variables.
 
 
-(() =>{
-    console.log("Hello Ji");
-}) ();
+// (() =>{
+//     console.log("Hello Ji");
+// }) ();
 
-(
-(name) =>{
-    console.log(`${name}, just accessed the portal`)
-} ) ("Aayush");
+// (
+// (name) =>{
+//     console.log(`${name}, just accessed the portal`)
+// } ) ("Aayush");
+
+
+( ()=>{
+    console.log("This is an IIFE function");
+})();
+
+( (name)=>{
+    console.log(`My name is ${name}`);
+})("Aayush")

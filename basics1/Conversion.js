@@ -1,13 +1,13 @@
-// let yu= "69";
+let yu= "69";
 
-// let valueInN= Number (yu);
-// console.log(yu);
+let valueInN= Number (yu);
+console.log(yu);
 
-// console.log(valueInN);
+console.log(valueInN);
 
-// let present=1;
-// let isTheStudentPresent= Boolean (present);
-// console.log(isTheStudentPresent);
+let present=6;
+let isTheStudentPresent= Boolean (present);
+console.log(isTheStudentPresent);
 
 console.log("1"+2+3+4);
 console.log(1+2+3+4+"5");  // in js converison, if first character is a string, the entire number will convert to a string on priority else an integer value

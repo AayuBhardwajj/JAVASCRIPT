@@ -36,8 +36,8 @@ let user ={
     domain: "Unknown"
 }
 
-function handleObject(any){
-    console.log(`${any.name}, who's age is ${any.age} and has got the domain of ${any.domain} just used the function` );
+function handleObject(an){
+    console.log(`${an.name}, who's age is ${an.age} and has got the domain of ${an.domain} just used the function` );
 }
 
 handleObject(user);

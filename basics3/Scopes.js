@@ -1,40 +1,41 @@
-let user={
-    username: "Aayush",
-    password:"123@",
-    age: 20,
+// let user={
+//     username:"Aayush",
+//     age:19,
+//     welcomeMessage: function(){
+//         console.log(`${this.username}, just entered the website`);
+//     }
+// }
+// user.welcomeMessage();
+// user.username="Ayush";
+// user.welcomeMessage();
 
-    welcomeMessage: function(){
-        console.log(`${this.username}, welcome to the website`);
-    }
+// const myfun= function(){
+//     name="Aayush";
+//     console.log(this.name);
+// }
+
+// myfun();
+
+// const chai=()=>{
+//     console.log(this);
+// }
+
+function addTwo(a,b){
+    return a+b;
 }
 
-user.welcomeMessage();
+console.log(addTwo(2,3));
 
-function glo(){
-    console.log(this);         //  because this function was not stored in any variable, 
-}                                //  it printed the global values working in the back end
-glo();
-
-
-const qt= function(){
-    let username="Aayush";        //  This gives the output of undefined because this looks for a global object
-    console.log(this.username);  //   As global object doesn't exists, it gives output as undefinied.
+const add= function (c,d){
+    return console.log(c+d);   // If wrapped in curly braces, return likhna pdega
 }
 
-qt();
 
-const addition = (a,b) =>{
-    return a+b;                      // If using { }, return statement is necessary.
-}
 
-console.log(addition(2,3)); 
+add(4,5);   
 
-const subtraction = (a,b) =>(a-b);    // If not using { }, to return the value , wrap it up in ( )                         
+const add1 = (r,t) => (r+t).   // If not wrapped in curly braces, no return needed
 
-console.log(subtraction(4,6));
- 
-// Taking object in arrow function
+console.log(`value of addition `,(add1(2,3)));
 
-let aF = () =>({name: "Aayush"});
-console.log(aF());
- 
+

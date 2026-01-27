@@ -60,7 +60,7 @@ coding.forEach((item, index, arr)=>{
     console.log(item,index,arr);
     
 })
-console.log(".........................");
+console.log("........................."); 
 let codingg=[
     {
     language: "JavaScript",

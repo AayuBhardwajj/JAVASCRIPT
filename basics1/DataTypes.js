@@ -56,7 +56,7 @@ let object={
 
 let object1=object; // here, i stored the values of object in another object, object1.
 
-object1.name= "Shyam"; // Now, i modified a value, name of object 1. As it was stored in heap memory, the original value will also change .
+object1.name= "Shyama"; // Now, i modified a value, name of object 1. As it was stored in heap memory, the original value will also change .
 
 
 console.log(object);
