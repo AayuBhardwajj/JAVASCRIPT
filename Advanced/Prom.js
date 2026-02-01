@@ -26,3 +26,23 @@ prom1.then(function(ob){
     console.log(ob);
     
 })
+
+const prom2= new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        let err=true;
+        if(!err){
+            resolve({userName: "Aayush",
+                        password: "123#";
+            });
+            reject("Error occured");
+        }
+    })
+})
+
+prom2.then((ab)=>{
+    console.log(ab);
+    return ab.userName;
+}).then((vq)=>{
+    console.log(`The userName is: ${vq}`);
+    
+})
