@@ -43,6 +43,5 @@ new Promise((resolve,reject)=>{
     console.log(`Password is: ${xy.pass}`);
 }).catch((w)=>{
     console.log(w);
-    
-})
+}).finally(()=>console.log("Work is done, Finally"))
 
